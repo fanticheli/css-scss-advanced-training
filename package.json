@@ -1,0 +1,25 @@
+{
+  "name": "css-scss-advanced-training",
+  "version": "1.0.0",
+  "description": "Project designed to train skills in css and scss.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanticheli/css-scss-advanced-training.git"
+  },
+  "keywords": [
+    "skills",
+    "css",
+    "scss",
+    "training"
+  ],
+  "author": "Igor Fanticheli Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fanticheli/css-scss-advanced-training/issues"
+  },
+  "homepage": "https://github.com/fanticheli/css-scss-advanced-training#readme"
+}
