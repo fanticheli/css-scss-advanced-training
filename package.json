@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/fanticheli/css-scss-advanced-training/issues"
   },
-  "homepage": "https://github.com/fanticheli/css-scss-advanced-training#readme"
+  "homepage": "https://github.com/fanticheli/css-scss-advanced-training#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0"
+  }
 }
