@@ -1,0 +1,22 @@
+.composition {
+    position: relative;
+
+    &__photo {
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+
+        &--html-css {
+            left: 50%;
+            height: 20rem;
+            transform: translate(-50%, 0);
+        }
+
+        &--sass {
+            left: 50%;
+            transform: translate(-40%, 70%);
+        }
+    }
+}

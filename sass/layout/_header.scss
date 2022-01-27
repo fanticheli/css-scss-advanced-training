@@ -3,7 +3,7 @@
     background-image: linear-gradient(to right bottom,
             rgba($color-primary-light, 0.8),
             rgba($color-primary-dark, 0.8)),
-        url('../img/background-image.jpg');
+        url('../img/background-image-2.jpg');
     background-size: cover;
     background-position: top;
     position: relative;
@@ -16,7 +16,7 @@
     }
 
     &__logo {
-        height: 3.5rem;
+        height: 10rem;
     }
 
     &__text-box {
