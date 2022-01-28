@@ -170,11 +170,11 @@ body {
     outline-offset: 2rem; }
     .composition__photo--html-css {
       left: 50%;
-      height: 20rem;
+      height: 25rem;
       transform: translate(-50%, 0); }
     .composition__photo--sass {
       left: 50%;
-      transform: translate(-40%, 70%); }
+      transform: translate(-40%, 100%); }
 
 .row {
   max-width: 114rem;
