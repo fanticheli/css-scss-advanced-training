@@ -212,13 +212,24 @@ body {
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
-      transform: rotateY(180deg); }
-      .card__side--back-1 {
+      transform: rotateY(180deg);
+      display: flex;
+      justify-content: center; }
+      .card__side--back-fen {
         background-image: linear-gradient(to right bottom, #f9e130, #ff3b57, #aa61f7); }
-      .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #f12929, #c00); }
-      .card__side--back-3 {
+        .card__side--back-fen img {
+          width: 10rem;
+          object-fit: contain; }
+      .card__side--back-santander {
+        background-image: linear-gradient(to right bottom, #ec5252, #c00); }
+        .card__side--back-santander img {
+          width: 100%;
+          object-fit: contain; }
+      .card__side--back-imagem {
         background-image: linear-gradient(to right bottom, #3650cd, #402b51); }
+        .card__side--back-imagem img {
+          width: 100%;
+          object-fit: contain; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
