@@ -60,4 +60,89 @@
     &:hover &__side--back {
         transform: rotateY(0);
     }
+
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+        &--fen {
+            background-image: linear-gradient(to right bottom, $color-fen-one, $color-fen-two, $color-fen-three),
+                url(../img/fen-social-media.jpg);
+        }
+
+        &--santander {
+            background-image: linear-gradient(to right bottom, $color-santander-light, $color-santander-dark),
+                url(../img/torre-santander.png);
+        }
+
+        &--imagem {
+            background-image: linear-gradient(to right bottom, $color-imagem-light, $color-imagem-dark),
+                url(../img/campo-imagem.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 55%;
+
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--fen {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-fen-one, .85),
+                    rgba($color-fen-two, .85),
+                    rgba($color-fen-three, .85));
+        }
+
+        &--santander {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-santander-light, .85),
+                    rgba($color-santander-dark, .85));
+        }
+
+        &--imagem {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-imagem-light, .85),
+                    rgba($color-imagem-dark, .85));
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+        color: $color-primary-dark;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-dark-light;
+                }
+            }
+        }
+    }
 }

@@ -234,6 +234,53 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .card__picture--fen {
+      background-image: linear-gradient(to right bottom, #f9e130, #ff3b57, #aa61f7), url(../img/fen-social-media.jpg); }
+    .card__picture--santander {
+      background-image: linear-gradient(to right bottom, #ec5252, #c00), url(../img/torre-santander.png); }
+    .card__picture--imagem {
+      background-image: linear-gradient(to right bottom, #3650cd, #402b51), url(../img/campo-imagem.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 55%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--fen {
+      background-image: linear-gradient(to right bottom, rgba(249, 225, 48, 0.85), rgba(255, 59, 87, 0.85), rgba(170, 97, 247, 0.85)); }
+    .card__heading-span--santander {
+      background-image: linear-gradient(to right bottom, rgba(236, 82, 82, 0.85), rgba(204, 0, 0, 0.85)); }
+    .card__heading-span--imagem {
+      background-image: linear-gradient(to right bottom, rgba(54, 80, 205, 0.85), rgba(64, 43, 81, 0.85)); }
+  .card__details {
+    padding: 3rem;
+    color: #D3D3D3; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #f7f7f7; }
 
 .row {
   max-width: 114rem;
