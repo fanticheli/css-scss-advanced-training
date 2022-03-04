@@ -1,6 +1,10 @@
 .composition {
     position: relative;
 
+    @include respond(tab-port) {
+        height: 35vh;
+    }
+
     &__photo {
         border-radius: 2px;
         position: absolute;
@@ -8,15 +12,9 @@
         transition: all .2s;
         outline-offset: 2rem;
 
-        &--html-css {
-            left: 50%;
-            height: 25rem;
-            transform: translate(-50%, 0);
-        }
-
-        &--sass {
-            left: 50%;
-            transform: translate(-40%, 100%);
+        &--html-css-sass {
+            width: 100%;
+            top: -3rem;
         }
     }
 }
