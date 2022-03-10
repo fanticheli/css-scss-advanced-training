@@ -43,6 +43,7 @@
         transform: skewX(12deg);
 
         @include respond(tab-port) {
+            
             transform: skewX(0);
         }
     }
