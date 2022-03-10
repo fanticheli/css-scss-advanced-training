@@ -337,6 +337,25 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #f7f7f7; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+          padding: 10rem 0; }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        padding: 1rem 3rem; } }
 
 .skill {
   width: 75%;
@@ -348,6 +367,12 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .skill {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem;
+      transform: skewX(0); } }
   .skill__shape {
     width: 15rem;
     height: 15rem;
@@ -357,6 +382,9 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12.01deg);
     backface-visibility: hidden; }
+    @media (max-width: 56.25em) {
+      .skill__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .skill__img {
     height: 100%;
     margin-left: 4rem;
@@ -365,6 +393,9 @@ body {
     transition: all .5s; }
   .skill__text {
     transform: skewX(12deg); }
+    @media (max-width: 56.25em) {
+      .skill__text {
+        transform: skewX(0); } }
   .skill__caption {
     position: absolute;
     top: 50%;
@@ -523,6 +554,9 @@ body {
   @media (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0; } }
+  @media (max-width: 37.5em) {
+    .section-about {
+      padding: 25rem 0; } }
 
 .section-features {
   padding: 20rem 0;
